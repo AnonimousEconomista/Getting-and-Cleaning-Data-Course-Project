@@ -1,0 +1,116 @@
+---
+title: "CodeBook for the Getting and Cleaning Data Course Project"
+date: "14 12 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# CodeBook
+## Preliminary Comments
+This is a CodeBook for the Course Project of Course 3 "Getting and Cleaning Data" of the Data Science Specialization Track of John Hopkins University.
+
+The data raw data used in this project were collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+The raw data can be obtained here:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+## Project Output: "tidydata.txt"
+
+- Running "run_analysis.R" produces a textfile containing the averaged values per activity per subject of the variables measuring means and standard deviations. 
+- The data is not rounded.
+- The data values range from -1 to 1.
+
+## Variables
+Identifying variables:
+
+* GroupCode: Subject ID of the experiment
+* activity: 6 activities were measured (laying, sitting, standing, walking, walking_upstairs, walking_downstairs)
+
+Measurement variables:
+
+* timeBodyaccelerometerMeanX
+* timeBodyaccelerometerMeanY
+* timeBodyaccelerometerMeanZ
+* timeBodyaccelerometerStdX
+* timeBodyaccelerometerStdY
+* timeBodyaccelerometerStdZ
+* timeGravityaccelerometerMeanX
+* timeGravityaccelerometerMeanY
+* timeGravityaccelerometerMeanZ
+* timeGravityaccelerometerStdX
+* timeGravityaccelerometerStdY
+ *timeGravityaccelerometerStdZ
+* timeBodyaccelerometerJerkMeanX
+* timeBodyaccelerometerJerkMeanY
+* timeBodyaccelerometerJerkMeanZ
+* timeBodyaccelerometerJerkStdX
+* timeBodyaccelerometerJerkStdY
+* timeBodyaccelerometerJerkStdZ
+* timeBodygyroscopescopeMeanX
+* timeBodygyroscopeMeanY
+* timeBodygyroscopeMeanZ
+* timeBodygyroscopeStdX
+* timeBodygyroscopeStdY
+* timeBodygyroscopeStdZ
+* timeBodygyroscopeJerkMeanX
+* timeBodygyroscopeJerkMeanY
+* timeBodygyroscopeJerkMeanZ
+* timeBodygyroscopeJerkStdX
+* timeBodygyroscopeJerkStdY
+* timeBimeodygyroscopeJerkStdZ
+* timeBodyaccelerometerMagMean
+* timeBodyaccelerometerMagStd
+* timeGravityaccelerometerMagMean
+* timeGravityaccelerometerMagStd
+* timeBodyaccelerometerJerkMagMean
+* timeBodyaccelerometerJerkMagStd
+* timeBodygyroscopeMagMean
+* timeBodygyroscopeMagStd
+* timeBodygyroscopeJerkMagMean
+* timeBodygyroscopeJerkMagStd
+* frequencyBodyaccelerometerMeanX
+* frequencyBodyaccelerometerMeanY
+* frequencyBodyaccelerometerMeanZ
+* frequencyBodyaccelerometerStdX
+* frequencyBodyaccelerometerStdY
+* frequencyBodyaccelerometerStdZ
+* frequencyBodyaccelerometerMeanFreqX
+* frequencyBodyaccelerometerMeanFreqY
+* frequencyBodyaccelerometerMeanFreqZ
+* frequencyBodyaccelerometerJerkMeanX
+* frequencyBodyaccelerometerJerkMeanY
+* frequencyBodyaccelerometerJerkMeanZ
+* frequencyBodyaccelerometerJerkStdX
+* frequencyBodyaccelerometerJerkStdY
+* frequencyBodyaccelerometerJerkStdZ
+* frequencyBodyaccelerometerJerkMeanFreqX
+* frequencyBodyaccelerometerJerkMeanFreqY
+* frequencyBodyaccelerometerJerkMeanFreqZ
+* frequencyBodygyroscopeMeanX
+* frequencyBodygyroscopeMeanY
+* frequencyBodygyroscopeMeanZ
+* frequencyBodygyroscopeStdX
+* frequencyBodygyroscopeStdY
+* frequencyBodygyroscopeStdZ
+* frequencyBodygyroscopeMeanFreqX
+* frequencyBodygyroscopeMeanFreqY
+* frequencyBodygyroscopeMeanFreqZ
+* frequencyBodyaccelerometerMagMean
+* frequencyBodyaccelerometerMagStd
+* frequencyBodyaccelerometerMagMeanFreq
+* frequencybodyaccelerometerJerkMagMean
+* frequencybodyaccelerometerJerkMagStd
+* frequencybodyaccelerometerJerkMagMeanFreq
+* frequencybodygyroscopeMagMean
+* frequencybodygyroscopeMagStd
+* frequencybodygyroscopeMagMeanFreq
+* frequencybodygyroscopeJerkMagMean
+* frequencybodygyroscopeJerkMagStd
+* frequencybodygyroscopeJerkMagMeanFreq
+
+## Data Manipulations
+Please see the README file.
+
