@@ -18,7 +18,7 @@ The "run_analysis.R" is broken down to 5 sections, each corresponding to the ste
 
 Section 1 downloads the original data from "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", unzips it and reads the different .txt files into the workspace. After assigning the appropriate column names, it first binds the train data and the test data each columnwise, then the two data sets (test and train) rowwise. The resulting object "mergedDataSet" is a dataframe.
 
-Section 2 creates a new dataframe extracting only those columns including "mean" or "std" anywhere in the column name, plus the variables "activity" and "GroupCode". The variable GroupCode in my code denotes the participant-ID.
+Section 2 creates a new dataframe extracting only those columns including "mean" or "std" anywhere in the column name, plus the variables "activity" and "SubjectId". The variable SubjectId in my code denotes the participant-ID.
 
 Section 3 replaces the numeric encoding of the activity variable by its character names as described in "activity_labels.txt".
 
