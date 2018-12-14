@@ -28,7 +28,7 @@ Section 5 computes the average of each variable for each activity and each subje
 
 3) The CodeBook
 
-The CodeBook provides additional details on the variables.
+The CodeBook provides additional details on the variables of the output file created by running "run_analysis.R".
 
 
 ORIGINAL DATA SOURCE:
