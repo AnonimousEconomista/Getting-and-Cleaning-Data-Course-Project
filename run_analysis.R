@@ -57,6 +57,7 @@ means <- measurements %>%
         group_by(GroupCode, activity) %>%
         summarise_all(funs(mean))
 
+tidydata<-write.table(means, file = "tidydata.txt", row.names = FALSE)
 
 
 
